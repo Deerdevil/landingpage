@@ -28,7 +28,6 @@ body {
 .main--container {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 /* HEADER AND NAV */
 .hero--header {
@@ -87,7 +86,7 @@ body {
   flex-shrink: 2;
   background-color: var(--white-color);
   height: 12em;
-  width: 50%;
+  width: 470px;
 }
 
 .hero--text {
@@ -191,7 +190,7 @@ body {
   font-weight: var(--font-bold);
   position: absolute;
   left: 50%;
-  bottom: 12%;
+  padding-top: 1em;
 }
 /* FOOTER */
 .footer {
@@ -207,12 +206,24 @@ body {
   background-color: var(--main-color);
   color: var(--white-color);
 }
+.cta button {
+  height: 3em;
+  width: 8em;
+  background-color: var(--white-color);
+  font-size: 0.75em;
+  border: none;
+  border-radius: 0.5em;
+  color: var(--main-color);
+  align-items: center;
+  margin-top: 0.75em;
+}
+.cta p {
+  padding: 1em;
+}
 /* Buttons and links */
 a {
   text-decoration: none;
 }
 button {
-  width: 7em;
-  height: 2em;
   cursor: pointer;
 }
