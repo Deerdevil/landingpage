@@ -1,2 +1,2 @@
 # landingpage
-First landingpage in TOP course
+First landingpage in TOP
