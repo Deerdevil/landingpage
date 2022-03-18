@@ -2,12 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,900&display=swap");
 }
 
 :root {
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,900&display=swap");
   --main-color: #c95a1f;
-  --sec-color: hsl(151, 72%, 61%);
+  --main2-color: #c2744b;
+  --sec-color: #54e39e;
   --third-color: #465775;
   --white-color: #dedede;
   --main-font: "Montserrat", sans-serif;
@@ -17,7 +18,7 @@
   --font-normal: 400;
 }
 html {
-  font-family: var(--font-bold);
+  font-family: var(--main-font);
 }
 body {
   height: 100vh;
@@ -80,7 +81,6 @@ body {
 
 .hero {
   display: flex;
-  margin-top: 14em;
 }
 
 .hero--text {
@@ -89,23 +89,32 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  color: var(--white-color);
+  color: var(--third-color);
 }
 
 .hero--text h1 {
   padding-bottom: 0.5em;
   position: relative;
+  font-size: 3em;
+  color: var(--main-color);
+  font-weight: var(--font-black);
+  top: 35%;
+}
+.hero--text p {
+  width: 20em;
+
+  font-size: 1.2em;
 }
 
 .hero--text::after {
   content: "";
-  height: 5em;
+  height: 12em;
   position: absolute;
-  right: -5%;
-  bottom: -35%;
-  width: 120em;
+  right: -10%;
+  bottom: -100%;
+  width: 60em;
   z-index: -1;
-  background-color: #c95a1f;
+  background-color: var(--white-color);
 }
 
 .hero--img--container {
@@ -117,12 +126,12 @@ body {
 }
 .hero--header::after {
   content: "";
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.4);
   filter: blur(40px);
   width: 100%;
   height: 50%;
-  top: 45%;
-  right: 15%;
+  top: 51%;
+  left: -55%;
   position: absolute;
 }
 .hero--img {
@@ -132,10 +141,12 @@ body {
 .hero button {
   height: 3em;
   width: 8em;
-  background-color: var(--sec-color);
-
+  background-color: var(--main-color);
+  font-size: 0.75em;
   border: none;
-  color: var(--third-color);
+  border-radius: 0.5em;
+  /* border: 0.2em solid var(--sec-color); */
+  color: var(--white-color);
   position: absolute;
   bottom: -70%;
 }
@@ -152,7 +163,9 @@ body {
 .section--one h2 {
   text-align: center;
   gap: 3em;
-  padding-top: 2em;
+  padding-top: 1em;
+  color: var(--white-color);
+  font-size: 2em;
 }
 .section--one--gallery {
   display: flex;
@@ -170,19 +183,20 @@ body {
 .card p {
   text-align: center;
   padding-top: 0.5em;
+  color: var(--white-color);
 }
 .card--image {
   width: 100%;
   height: 12em;
   object-fit: cover;
-  border: 0.2em solid black;
+  border: 0.2em solid var(--white-color);
   border-radius: 1em;
 }
 
 /* SECTION TWO, QUOTE */
 .section--two {
   display: flex;
-  background-color: grey;
+  background-color: var(--white-color);
   flex: 1 1 15em;
   align-items: center;
   padding-left: 2.5em;
@@ -193,13 +207,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--white-color);
 }
 .cta {
   display: flex;
   padding: 2em;
   margin-top: 1em;
+  margin-bottom: 1em;
   border-radius: 0.5em;
-  background-color: blue;
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
 /* Buttons and links */
 a {
