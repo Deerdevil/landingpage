@@ -150,13 +150,15 @@ body {
 }
 .section--one--gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex: 1;
+
   padding-bottom: 2em;
 }
 .card {
   display: flex;
   flex-direction: column;
+  flex: 1 1 150px;
   width: 300px;
   max-width: 450px;
   padding: 1.5em;
